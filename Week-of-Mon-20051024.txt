@@ -1,0 +1,32 @@
+From vimarsh.vasavada at c-sam.co.in  Tue Oct 25 11:41:07 2005
+From: vimarsh.vasavada at c-sam.co.in (Vimarsh Vasavada)
+Date: Tue, 25 Oct 2005 15:11:07 +0530
+Subject: [Jadabs-dev] (no subject)
+Message-ID: <00f101c5d948$3a8514c0$7d01a8c0@popnet.co.in>
+
+Hello jadabs-dev-group !
+
+On a dynamic service delivery i have following basic questions,which i could
+not answer after surfing through the site...
+
+1. Can a CLDC MIDP 1.0 or MIDP 2.0 based OSGI-Framework download dynmically
+a SERVICE, Execute it and then throw it away?
+2. Can a CLDC MIDP 1.0 or MIDP 2.0 based OSGI-Framework download dynmically
+an SERVICE, persist it in its RMS and then based on user request
+invoke/execute it?
+
+
+thnx a bunch in adavance....
+
+</Vim>
+
+
+
+--
+No virus found in this outgoing message.
+Checked by AVG Anti-Virus.
+Version: 7.0.344 / Virus Database: 267.12.4/146 - Release Date: 10/21/2005
+
+
+
+

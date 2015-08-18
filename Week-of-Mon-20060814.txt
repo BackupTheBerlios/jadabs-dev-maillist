@@ -1,0 +1,15 @@
+From peter at neubauer.se  Sun Aug 20 20:43:51 2006
+From: peter at neubauer.se (Peter Neubauer)
+Date: Sun, 20 Aug 2006 20:43:51 +0200
+Subject: [Jadabs-dev] Project alive?
+Message-ID: <308579740608201143v42efec1fod35a7dfe07673579@mail.gmail.com>
+
+Hi there,
+just found out about this project. Looks extremely interesting but it
+seems this list is abandoned since late 2005. Is there any development
+going on, is Jadabs able to run on MIDP2 adn if this is not an active
+project, where has the focus for the project shifted, any successor?
+
+/peter
+
+

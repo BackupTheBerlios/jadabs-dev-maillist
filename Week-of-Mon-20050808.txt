@@ -1,0 +1,11 @@
+From 52awais at niit.edu.pk  Tue Aug  9 14:08:45 2005
+From: 52awais at niit.edu.pk (52awais at niit.edu.pk)
+Date: Tue, 9 Aug 2005 17:08:45 +0500 (PKT)
+Subject: [Jadabs-dev] sujjestion required
+Message-ID: <39530.202.147.176.70.1123589325.squirrel@mail.niit.edu.pk>
+
+i want to receieve sms on my website from mobile. what setup i require.
+can . can i use my own SMS Center which is builtin in Kannel SMS Gateway .
+
+
+

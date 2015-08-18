@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Jadabs-dev] Problem using jadabs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jadabs-dev/Week-of-Mon-20051031/index.html" >
+   <LINK REL="made" HREF="mailto:jadabs-dev%40lists.berlios.de?Subject=Re%3A%20%5BJadabs-dev%5D%20Problem%20using%20jadabs&In-Reply-To=%3Caa7ce83b0510301946u7a831d72s2f903c9ada0a2e51%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Jadabs-dev] Problem using jadabs</H1>
+    <B>Ken Robinson</B> 
+    <A HREF="mailto:jadabs-dev%40lists.berlios.de?Subject=Re%3A%20%5BJadabs-dev%5D%20Problem%20using%20jadabs&In-Reply-To=%3Caa7ce83b0510301946u7a831d72s2f903c9ada0a2e51%40mail.gmail.com%3E"
+       TITLE="[Jadabs-dev] Problem using jadabs">kenrobinsonster at gmail.com
+       </A><BR>
+    <I>Mon Oct 31 04:46:27 CET 2005</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2">[ date ]</a>
+              <a href="thread.html#2">[ thread ]</a>
+              <a href="subject.html#2">[ subject ]</a>
+              <a href="author.html#2">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi I'm a research student at QUT in Brisbane, Australia, wishing to use
+jadabs for communication amongst robots.
+
+I presently get the below error when I start jadabs minimal. Can anyone tell
+me what I am doing wrong?
+regards,
+Ken Robinson
+
+$ bash jadabs.sh
+Knopflerfish OSGi framework, version &lt;no version found&gt;
+Copyright 2003-2004 Knopflerfish. All Rights Reserved.
+
+See <A HREF="http://www.knopflerfish.org">http://www.knopflerfish.org</A> for more information.
+Loading xargs file c:\SW\jadabs\jadabs-1.0.0-SNAPSHOT\init.xargs
+Installed and started: file:repository/log4j/jars/log4j-1.2.8-osgi.jar(id#1)
+Installed: file:repository/kobjects/jars/kxml2-2.1.9-osgi.jar (id#2)
+Installed and started: file:repository/jadabs/jars/bundleloader-
+1.0.0-SNAPSHOT.j
+ar (id#3)
+Installed and started: file:repository/jadabs/jars/pluginloader-
+1.0.0-SNAPSHOT.j
+ar (id#4)
+0 [main] INFO ch.ethz.jadabs.bundleLoader.BundleLoaderImpl - BundleLoader
+start
+ing ...
+1594 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl -
+jadabs.starter
+(The system cannot find the file specified)
+java.io.FileNotFoundException: jadabs.starter (The system cannot find the
+file s
+pecified)
+at java.io.FileInputStream.open(Native Method)
+at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+at java.io.FileReader.&lt;init&gt;(Unknown Source)
+at ch.ethz.jadabs.pluginLoader.PluginLoaderImpl.init(PluginLoaderImpl.ja
+va:127)
+at ch.ethz.jadabs.pluginLoader.PluginLoaderActivator.start(PluginLoaderA
+ctivator.java:98)
+at org.knopflerfish.framework.BundleImpl$1.run(BundleImpl.java:279)
+at java.security.AccessController.doPrivileged(Native Method)
+at org.knopflerfish.framework.BundleImpl.start(BundleImpl.java:253)
+at org.knopflerfish.framework.Framework.launch(Framework.java:358)
+at org.knopflerfish.framework.Main.handleArgs(Main.java:283)
+at org.knopflerfish.framework.Main.main(Main.java:190)
+1609 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl - Loading of
+Plug
+in failed.
+Framework launched
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/jadabs-dev/attachments/20051031/1cc9cf14/attachment.html">https://lists.berlios.de/pipermail/jadabs-dev/attachments/20051031/1cc9cf14/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2">[ date ]</a>
+              <a href="thread.html#2">[ thread ]</a>
+              <a href="subject.html#2">[ subject ]</a>
+              <a href="author.html#2">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jadabs-dev">More information about the Jadabs-dev
+mailing list</a><br>
+</body></html>

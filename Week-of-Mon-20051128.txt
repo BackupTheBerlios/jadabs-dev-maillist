@@ -1,0 +1,306 @@
+From kenrobinsonster at gmail.com  Mon Nov 28 03:29:26 2005
+From: kenrobinsonster at gmail.com (Ken Robinson)
+Date: Mon, 28 Nov 2005 12:29:26 +1000
+Subject: [Jadabs-dev] Re: Jadabs
+In-Reply-To: <aa7ce83b0511080434w35bf023p8abb1ebf8d85c12f@mail.gmail.com>
+References: <aa7ce83b0511011903x7f8471frf39012d5319d58fe@mail.gmail.com>
+	 <XFE0vr9FFf70DQLGJZG000040dc@xfe0.d.ethz.ch>
+	 <aa7ce83b0511080426j68f75524m271437c462b78150@mail.gmail.com>
+	 <aa7ce83b0511080434w35bf023p8abb1ebf8d85c12f@mail.gmail.com>
+Message-ID: <aa7ce83b0511271829s5cf92148gb4624d840c1a29dc@mail.gmail.com>
+
+Hi Andreas,
+I am now trying to build jadabs using maven. I get a compilation error as
+detailed below, not knowing how to make osgi:install. Can you help?
+
+jadabs:buildbundles:
+multiproject:projects-init:
+Gathering project list
+Starting the reactor...
+Our processing order:
+Benchmark Service
+Jadabs-Concurrent
+RemoteFramework API
+Log4j-CDC
+JXME-OSGi
+JXME-Services API
+RemoteFramework Impl
+jadabsgui
+PPC-Admin
+TestMain
+JXME-Services-Impl
+JXME-TCP
+Jadabs-JXME-TCP-Test
+Jadabs-JXME-UDP
+Jadabs-JXME-UDP-Test
+Messenger
+Messenger-Test
+MobileServices-SMTPGW
+MobileServices-SMTPGW-Test
+MobileServices-SMTPGW-Test-TCP
+Shell
++----------------------------------------
+| Gathering project list Benchmark Service
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Jadabs-Concurrent
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list RemoteFramework API
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Log4j-CDC
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list JXME-OSGi
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list JXME-Services API
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list RemoteFramework Impl
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list jadabsgui
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list PPC-Admin
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list TestMain
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list JXME-Services-Impl
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list JXME-TCP
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Jadabs-JXME-TCP-Test
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Jadabs-JXME-UDP
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Jadabs-JXME-UDP-Test
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Messenger
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Messenger-Test
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list MobileServices-SMTPGW
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list MobileServices-SMTPGW-Test
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list MobileServices-SMTPGW-Test-TCP
+| Memory: 4M/5M
++----------------------------------------
++----------------------------------------
+| Gathering project list Shell
+| Memory: 4M/5M
++----------------------------------------
+
+multiproject:goal:
+Starting the reactor...
+Our processing order:
+Benchmark Service
+Jadabs-Concurrent
+RemoteFramework API
+Log4j-CDC
+JXME-OSGi
+JXME-Services API
+RemoteFramework Impl
+jadabsgui
+PPC-Admin
+TestMain
+JXME-Services-Impl
+JXME-TCP
+Jadabs-JXME-TCP-Test
+Jadabs-JXME-UDP
+Jadabs-JXME-UDP-Test
+Messenger
+Messenger-Test
+MobileServices-SMTPGW
+MobileServices-SMTPGW-Test
+MobileServices-SMTPGW-Test-TCP
+Shell
++----------------------------------------
+| Executing osgi:install Benchmark Service
+| Memory: 4M/5M
++----------------------------------------
+DEPRECATED: the default goal should be specified in the <build> section of
+project.xml instead of maven.xml
+
+BUILD FAILED
+File...... /Users/kp_robinson/.maven/cache/maven-multiproject-plugin-1.4.1
+/plugin.jelly
+Element... maven:reactor
+Line...... 218
+Column.... -1
+Unknown goal "osgi:install"
+Total time   : 14 seconds
+Finished at  : Sunday, November 27, 2005 9:55:37 PM EST
+
+
+Compilation exited abnormally with code 70 at Sun Nov 27 21:55:37
+
+On 11/8/05, Ken Robinson <kenrobinsonster at gmail.com> wrote:
+>
+> I've tried the jadabs.sh from the cvs bin directory and get the same
+> result
+>
+> I then tried to build using maven but get the following error. This is
+> after I copy the plugins from
+> http://osgirepo.berlios.de/repository/maven/jars/ and put it in the
+> plugin directory in maven. Is there something basic I am doing wrong?
+> Do I need to all find and install those jar files mentioned below?
+> Should they go into the .maven/repository?
+>
+> regards,
+> Ken Robnson
+>
+> __  __
+> |  \/  |__ _Apache__ ___
+> | |\/| / _` \ V / -_) ' \  ~ intelligent projects ~
+> |_|  |_\__,_|\_/\___|_||_|  v. 1.0.2
+>
+> The build cannot continue because of the following unsatisfied
+> dependencies:
+>
+> commons-net-1.1.0.jar
+> jsch-0.1.5.jar
+> commons-jelly-tags-velocity-20030303.205659.jar
+> velocity-1.4-dev.jar
+> > On 11/2/05, Andreas Frei <frei at inf.ethz.ch> wrote:
+> > Hi Ken
+> >
+> >
+> >
+> > A File jadabs.starter File is needed, if it is not in the bin directory
+> > download the sources from CVS at berlios.de. An example of the
+> > jadabs.starter is in the bin directory.
+> >
+> >
+> >
+> > Cheers,
+> >
+> > Andreas
+> >
+> >
+> >
+> >   _____
+> >
+> > Von: Ken Robinson [mailto:kenrobinsonster at gmail.com]
+> > Gesendet: Mittwoch, 2. November 2005 04:03
+> > An: frei at inf.ethz.ch
+> > Betreff: Jadabs
+> >
+> >
+> >
+> > Hi Andreas,
+> > I am presently doing a research masters part-time in Brisbane,
+> Queensland.
+> > I am looking at having robots form mobile ad hoc networks and then
+> > communicate; discovering services, transferring code, messaging and the
+> > like.
+> > I was originally looking at JXTA but through it mailing lists was lead
+> to
+> > jadabs.
+> >
+> > Jadabs has everything that I need (dynamic loading of jar files, weaving
+> of
+> > new code, communication using JXTA over bluetooth).
+> >
+> > I've downloaded jadabs both minimal and full, but cannot get it to work.
+> I
+> > get the below error? Is there anything that I should be doing?
+> >
+> > regards,
+> > Ken Robinson
+> >
+> > $ bash jadabs.sh
+> > Knopflerfish OSGi framework, version <no version found>
+> > Copyright 2003-2004 Knopflerfish. All Rights Reserved.
+> >
+> > See http://www.knopflerfish.org <http://www.knopflerfish.org/>  for more
+> > information.
+> > Loading xargs file c:\SW\jadabs\jadabs-1.0.0-SNAPSHOT\init.xargs
+> > Installed and started: file:repository/log4j/jars
+> >
+> > /log4j-1.2.8-osgi.jar (id#1)
+> > Installed: file:repository/kobjects/jars/kxml2-2.1.9-osgi.jar (id#2)
+> > Installed and started:
+> > file:repository/jadabs/jars/bundleloader-1.0.0-SNAPSHOT.j
+> > ar (id#3)
+> > Installed and started:
+> > file:repository/jadabs/jars/pluginloader-1.0.0-SNAPSHOT.j
+> > ar (id#4)
+> > 0 [main] INFO  ch.ethz.jadabs.bundleLoader.BundleLoaderImpl -
+> BundleLoader
+> > start
+> > ing ...
+> > 1594 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl -
+> > jadabs.starter
+> > (The system cannot find the file specified)
+> > java.io.FileNotFoundException: jadabs.starter (The system cannot find
+> the
+> > file s
+> > pecified)
+> >         at java.io.FileInputStream.open(Native Method)
+> >         at java.io.FileInputStream.<init>(Unknown Source)
+> >         at java.io.FileInputStream.<init>(Unknown Source)
+> >         at java.io.FileReader.<init>(Unknown Source)
+> >         at
+> > ch.ethz.jadabs.pluginLoader.PluginLoaderImpl.init(PluginLoaderImpl.ja
+> > va:127)
+> >         at
+> > ch.ethz.jadabs.pluginLoader.PluginLoaderActivator.start(PluginLoaderA
+> > ctivator.java:98)
+> >         at org.knopflerfish.framework.BundleImpl$1.run(BundleImpl.java
+> :279)
+> >         at java.security.AccessController.doPrivileged(Native Method)
+> >         at org.knopflerfish.framework.BundleImpl.start(BundleImpl.java
+> :253)
+> >         at org.knopflerfish.framework.Framework.launch(Framework.java
+> :358)
+> >         at org.knopflerfish.framework.Main.handleArgs(Main.java:283)
+> >         at org.knopflerfish.framework.Main.main(Main.java:190)
+> > 1609 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl - Loading
+> of
+> > Plug
+> > in  failed.
+> > Framework launched
+> >
+> >
+> >
+> >
+> >
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/jadabs-dev/attachments/20051128/1fb11542/attachment.html>
+

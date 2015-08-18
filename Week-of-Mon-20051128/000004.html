@@ -1,0 +1,350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Jadabs-dev] Re: Jadabs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jadabs-dev/Week-of-Mon-20051128/index.html" >
+   <LINK REL="made" HREF="mailto:jadabs-dev%40lists.berlios.de?Subject=Re%3A%20%5BJadabs-dev%5D%20Re%3A%20Jadabs&In-Reply-To=%3Caa7ce83b0511271829s5cf92148gb4624d840c1a29dc%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Jadabs-dev] Re: Jadabs</H1>
+    <B>Ken Robinson</B> 
+    <A HREF="mailto:jadabs-dev%40lists.berlios.de?Subject=Re%3A%20%5BJadabs-dev%5D%20Re%3A%20Jadabs&In-Reply-To=%3Caa7ce83b0511271829s5cf92148gb4624d840c1a29dc%40mail.gmail.com%3E"
+       TITLE="[Jadabs-dev] Re: Jadabs">kenrobinsonster at gmail.com
+       </A><BR>
+    <I>Mon Nov 28 03:29:26 CET 2005</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Andreas,
+I am now trying to build jadabs using maven. I get a compilation error as
+detailed below, not knowing how to make osgi:install. Can you help?
+
+jadabs:buildbundles:
+multiproject:projects-init:
+Gathering project list
+Starting the reactor...
+Our processing order:
+Benchmark Service
+Jadabs-Concurrent
+RemoteFramework API
+Log4j-CDC
+JXME-OSGi
+JXME-Services API
+RemoteFramework Impl
+jadabsgui
+PPC-Admin
+TestMain
+JXME-Services-Impl
+JXME-TCP
+Jadabs-JXME-TCP-Test
+Jadabs-JXME-UDP
+Jadabs-JXME-UDP-Test
+Messenger
+Messenger-Test
+MobileServices-SMTPGW
+MobileServices-SMTPGW-Test
+MobileServices-SMTPGW-Test-TCP
+Shell
++----------------------------------------
+|<i> Gathering project list Benchmark Service
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Jadabs-Concurrent
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list RemoteFramework API
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Log4j-CDC
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list JXME-OSGi
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list JXME-Services API
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list RemoteFramework Impl
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list jadabsgui
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list PPC-Admin
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list TestMain
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list JXME-Services-Impl
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list JXME-TCP
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Jadabs-JXME-TCP-Test
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Jadabs-JXME-UDP
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Jadabs-JXME-UDP-Test
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Messenger
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Messenger-Test
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list MobileServices-SMTPGW
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list MobileServices-SMTPGW-Test
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list MobileServices-SMTPGW-Test-TCP
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
++----------------------------------------
+|<i> Gathering project list Shell
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
+
+multiproject:goal:
+Starting the reactor...
+Our processing order:
+Benchmark Service
+Jadabs-Concurrent
+RemoteFramework API
+Log4j-CDC
+JXME-OSGi
+JXME-Services API
+RemoteFramework Impl
+jadabsgui
+PPC-Admin
+TestMain
+JXME-Services-Impl
+JXME-TCP
+Jadabs-JXME-TCP-Test
+Jadabs-JXME-UDP
+Jadabs-JXME-UDP-Test
+Messenger
+Messenger-Test
+MobileServices-SMTPGW
+MobileServices-SMTPGW-Test
+MobileServices-SMTPGW-Test-TCP
+Shell
++----------------------------------------
+|<i> Executing osgi:install Benchmark Service
+</I>|<i> Memory: 4M/5M
+</I>+----------------------------------------
+DEPRECATED: the default goal should be specified in the &lt;build&gt; section of
+project.xml instead of maven.xml
+
+BUILD FAILED
+File...... /Users/kp_robinson/.maven/cache/maven-multiproject-plugin-1.4.1
+/plugin.jelly
+Element... maven:reactor
+Line...... 218
+Column.... -1
+Unknown goal &quot;osgi:install&quot;
+Total time   : 14 seconds
+Finished at  : Sunday, November 27, 2005 9:55:37 PM EST
+
+
+Compilation exited abnormally with code 70 at Sun Nov 27 21:55:37
+
+On 11/8/05, Ken Robinson &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">kenrobinsonster at gmail.com</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i> I've tried the jadabs.sh from the cvs bin directory and get the same
+</I>&gt;<i> result
+</I>&gt;<i>
+</I>&gt;<i> I then tried to build using maven but get the following error. This is
+</I>&gt;<i> after I copy the plugins from
+</I>&gt;<i> <A HREF="http://osgirepo.berlios.de/repository/maven/jars/">http://osgirepo.berlios.de/repository/maven/jars/</A> and put it in the
+</I>&gt;<i> plugin directory in maven. Is there something basic I am doing wrong?
+</I>&gt;<i> Do I need to all find and install those jar files mentioned below?
+</I>&gt;<i> Should they go into the .maven/repository?
+</I>&gt;<i>
+</I>&gt;<i> regards,
+</I>&gt;<i> Ken Robnson
+</I>&gt;<i>
+</I>&gt;<i> __  __
+</I>&gt;<i> |  \/  |__ _Apache__ ___
+</I>&gt;<i> | |\/| / _` \ V / -_) ' \  ~ intelligent projects ~
+</I>&gt;<i> |_|  |_\__,_|\_/\___|_||_|  v. 1.0.2
+</I>&gt;<i>
+</I>&gt;<i> The build cannot continue because of the following unsatisfied
+</I>&gt;<i> dependencies:
+</I>&gt;<i>
+</I>&gt;<i> commons-net-1.1.0.jar
+</I>&gt;<i> jsch-0.1.5.jar
+</I>&gt;<i> commons-jelly-tags-velocity-20030303.205659.jar
+</I>&gt;<i> velocity-1.4-dev.jar
+</I>&gt;<i> &gt; On 11/2/05, Andreas Frei &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">frei at inf.ethz.ch</A>&gt; wrote:
+</I>&gt;<i> &gt; Hi Ken
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; A File jadabs.starter File is needed, if it is not in the bin directory
+</I>&gt;<i> &gt; download the sources from CVS at berlios.de. An example of the
+</I>&gt;<i> &gt; jadabs.starter is in the bin directory.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Cheers,
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Andreas
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;   _____
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Von: Ken Robinson [mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">kenrobinsonster at gmail.com</A>]
+</I>&gt;<i> &gt; Gesendet: Mittwoch, 2. November 2005 04:03
+</I>&gt;<i> &gt; An: <A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">frei at inf.ethz.ch</A>
+</I>&gt;<i> &gt; Betreff: Jadabs
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Hi Andreas,
+</I>&gt;<i> &gt; I am presently doing a research masters part-time in Brisbane,
+</I>&gt;<i> Queensland.
+</I>&gt;<i> &gt; I am looking at having robots form mobile ad hoc networks and then
+</I>&gt;<i> &gt; communicate; discovering services, transferring code, messaging and the
+</I>&gt;<i> &gt; like.
+</I>&gt;<i> &gt; I was originally looking at JXTA but through it mailing lists was lead
+</I>&gt;<i> to
+</I>&gt;<i> &gt; jadabs.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Jadabs has everything that I need (dynamic loading of jar files, weaving
+</I>&gt;<i> of
+</I>&gt;<i> &gt; new code, communication using JXTA over bluetooth).
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; I've downloaded jadabs both minimal and full, but cannot get it to work.
+</I>&gt;<i> I
+</I>&gt;<i> &gt; get the below error? Is there anything that I should be doing?
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; regards,
+</I>&gt;<i> &gt; Ken Robinson
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; $ bash jadabs.sh
+</I>&gt;<i> &gt; Knopflerfish OSGi framework, version &lt;no version found&gt;
+</I>&gt;<i> &gt; Copyright 2003-2004 Knopflerfish. All Rights Reserved.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; See <A HREF="http://www.knopflerfish.org">http://www.knopflerfish.org</A> &lt;<A HREF="http://www.knopflerfish.org/">http://www.knopflerfish.org/</A>&gt;  for more
+</I>&gt;<i> &gt; information.
+</I>&gt;<i> &gt; Loading xargs file c:\SW\jadabs\jadabs-1.0.0-SNAPSHOT\init.xargs
+</I>&gt;<i> &gt; Installed and started: file:repository/log4j/jars
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; /log4j-1.2.8-osgi.jar (id#1)
+</I>&gt;<i> &gt; Installed: file:repository/kobjects/jars/kxml2-2.1.9-osgi.jar (id#2)
+</I>&gt;<i> &gt; Installed and started:
+</I>&gt;<i> &gt; file:repository/jadabs/jars/bundleloader-1.0.0-SNAPSHOT.j
+</I>&gt;<i> &gt; ar (id#3)
+</I>&gt;<i> &gt; Installed and started:
+</I>&gt;<i> &gt; file:repository/jadabs/jars/pluginloader-1.0.0-SNAPSHOT.j
+</I>&gt;<i> &gt; ar (id#4)
+</I>&gt;<i> &gt; 0 [main] INFO  ch.ethz.jadabs.bundleLoader.BundleLoaderImpl -
+</I>&gt;<i> BundleLoader
+</I>&gt;<i> &gt; start
+</I>&gt;<i> &gt; ing ...
+</I>&gt;<i> &gt; 1594 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl -
+</I>&gt;<i> &gt; jadabs.starter
+</I>&gt;<i> &gt; (The system cannot find the file specified)
+</I>&gt;<i> &gt; java.io.FileNotFoundException: jadabs.starter (The system cannot find
+</I>&gt;<i> the
+</I>&gt;<i> &gt; file s
+</I>&gt;<i> &gt; pecified)
+</I>&gt;<i> &gt;         at java.io.FileInputStream.open(Native Method)
+</I>&gt;<i> &gt;         at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+</I>&gt;<i> &gt;         at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+</I>&gt;<i> &gt;         at java.io.FileReader.&lt;init&gt;(Unknown Source)
+</I>&gt;<i> &gt;         at
+</I>&gt;<i> &gt; ch.ethz.jadabs.pluginLoader.PluginLoaderImpl.init(PluginLoaderImpl.ja
+</I>&gt;<i> &gt; va:127)
+</I>&gt;<i> &gt;         at
+</I>&gt;<i> &gt; ch.ethz.jadabs.pluginLoader.PluginLoaderActivator.start(PluginLoaderA
+</I>&gt;<i> &gt; ctivator.java:98)
+</I>&gt;<i> &gt;         at org.knopflerfish.framework.BundleImpl$1.run(BundleImpl.java
+</I>&gt;<i> :279)
+</I>&gt;<i> &gt;         at java.security.AccessController.doPrivileged(Native Method)
+</I>&gt;<i> &gt;         at org.knopflerfish.framework.BundleImpl.start(BundleImpl.java
+</I>&gt;<i> :253)
+</I>&gt;<i> &gt;         at org.knopflerfish.framework.Framework.launch(Framework.java
+</I>&gt;<i> :358)
+</I>&gt;<i> &gt;         at org.knopflerfish.framework.Main.handleArgs(Main.java:283)
+</I>&gt;<i> &gt;         at org.knopflerfish.framework.Main.main(Main.java:190)
+</I>&gt;<i> &gt; 1609 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl - Loading
+</I>&gt;<i> of
+</I>&gt;<i> &gt; Plug
+</I>&gt;<i> &gt; in  failed.
+</I>&gt;<i> &gt; Framework launched
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i>
+</I>-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/jadabs-dev/attachments/20051128/1fb11542/attachment.html">https://lists.berlios.de/pipermail/jadabs-dev/attachments/20051128/1fb11542/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jadabs-dev">More information about the Jadabs-dev
+mailing list</a><br>
+</body></html>

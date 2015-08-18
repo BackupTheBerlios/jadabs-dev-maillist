@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Jadabs-dev] Fwd: Jadabs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jadabs-dev/Week-of-Mon-20051107/index.html" >
+   <LINK REL="made" HREF="mailto:jadabs-dev%40lists.berlios.de?Subject=Re%3A%20%5BJadabs-dev%5D%20Fwd%3A%20Jadabs&In-Reply-To=%3Caa7ce83b0511080434w35bf023p8abb1ebf8d85c12f%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Jadabs-dev] Fwd: Jadabs</H1>
+    <B>Ken Robinson</B> 
+    <A HREF="mailto:jadabs-dev%40lists.berlios.de?Subject=Re%3A%20%5BJadabs-dev%5D%20Fwd%3A%20Jadabs&In-Reply-To=%3Caa7ce83b0511080434w35bf023p8abb1ebf8d85c12f%40mail.gmail.com%3E"
+       TITLE="[Jadabs-dev] Fwd: Jadabs">kenrobinsonster at gmail.com
+       </A><BR>
+    <I>Tue Nov  8 13:34:36 CET 2005</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I've tried the jadabs.sh from the cvs bin directory and get the same result
+
+I then tried to build using maven but get the following error. This is
+after I copy the plugins from
+<A HREF="http://osgirepo.berlios.de/repository/maven/jars/">http://osgirepo.berlios.de/repository/maven/jars/</A> and put it in the
+plugin directory in maven. Is there something basic I am doing wrong?
+Do I need to all find and install those jar files mentioned below?
+Should they go into the .maven/repository?
+
+regards,
+Ken Robnson
+
+ __  __
+|<i>  \/  |__ _Apache__ ___
+</I>|<i> |\/| / _` \ V / -_) ' \  ~ intelligent projects ~
+</I>|<i>_|  |_\__,_|\_/\___|_||_|  v. 1.0.2
+</I>
+The build cannot continue because of the following unsatisfied dependencies:
+
+commons-net-1.1.0.jar
+jsch-0.1.5.jar
+commons-jelly-tags-velocity-20030303.205659.jar
+velocity-1.4-dev.jar
+&gt;<i> On 11/2/05, Andreas Frei &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">frei at inf.ethz.ch</A>&gt; wrote:
+</I>&gt;<i> Hi Ken
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> A File jadabs.starter File is needed, if it is not in the bin directory
+</I>&gt;<i> download the sources from CVS at berlios.de. An example of the
+</I>&gt;<i> jadabs.starter is in the bin directory.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Cheers,
+</I>&gt;<i>
+</I>&gt;<i> Andreas
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>   _____
+</I>&gt;<i>
+</I>&gt;<i> Von: Ken Robinson [mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">kenrobinsonster at gmail.com</A>]
+</I>&gt;<i> Gesendet: Mittwoch, 2. November 2005 04:03
+</I>&gt;<i> An: <A HREF="https://lists.berlios.de/mailman/listinfo/jadabs-dev">frei at inf.ethz.ch</A>
+</I>&gt;<i> Betreff: Jadabs
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Hi Andreas,
+</I>&gt;<i> I am presently doing a research masters part-time in Brisbane, Queensland.
+</I>&gt;<i> I am looking at having robots form mobile ad hoc networks and then
+</I>&gt;<i> communicate; discovering services, transferring code, messaging and the
+</I>&gt;<i> like.
+</I>&gt;<i> I was originally looking at JXTA but through it mailing lists was lead to
+</I>&gt;<i> jadabs.
+</I>&gt;<i>
+</I>&gt;<i> Jadabs has everything that I need (dynamic loading of jar files, weaving of
+</I>&gt;<i> new code, communication using JXTA over bluetooth).
+</I>&gt;<i>
+</I>&gt;<i> I've downloaded jadabs both minimal and full, but cannot get it to work. I
+</I>&gt;<i> get the below error? Is there anything that I should be doing?
+</I>&gt;<i>
+</I>&gt;<i> regards,
+</I>&gt;<i> Ken Robinson
+</I>&gt;<i>
+</I>&gt;<i> $ bash jadabs.sh
+</I>&gt;<i> Knopflerfish OSGi framework, version &lt;no version found&gt;
+</I>&gt;<i> Copyright 2003-2004 Knopflerfish. All Rights Reserved.
+</I>&gt;<i>
+</I>&gt;<i> See <A HREF="http://www.knopflerfish.org">http://www.knopflerfish.org</A> &lt;<A HREF="http://www.knopflerfish.org/">http://www.knopflerfish.org/</A>&gt;  for more
+</I>&gt;<i> information.
+</I>&gt;<i> Loading xargs file c:\SW\jadabs\jadabs-1.0.0-SNAPSHOT\init.xargs
+</I>&gt;<i> Installed and started: file:repository/log4j/jars
+</I>&gt;<i>
+</I>&gt;<i> /log4j-1.2.8-osgi.jar (id#1)
+</I>&gt;<i> Installed: file:repository/kobjects/jars/kxml2-2.1.9-osgi.jar (id#2)
+</I>&gt;<i> Installed and started:
+</I>&gt;<i> file:repository/jadabs/jars/bundleloader-1.0.0-SNAPSHOT.j
+</I>&gt;<i> ar (id#3)
+</I>&gt;<i> Installed and started:
+</I>&gt;<i> file:repository/jadabs/jars/pluginloader-1.0.0-SNAPSHOT.j
+</I>&gt;<i> ar (id#4)
+</I>&gt;<i> 0 [main] INFO  ch.ethz.jadabs.bundleLoader.BundleLoaderImpl - BundleLoader
+</I>&gt;<i> start
+</I>&gt;<i> ing ...
+</I>&gt;<i> 1594 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl -
+</I>&gt;<i> jadabs.starter
+</I>&gt;<i> (The system cannot find the file specified)
+</I>&gt;<i> java.io.FileNotFoundException: jadabs.starter (The system cannot find the
+</I>&gt;<i> file s
+</I>&gt;<i> pecified)
+</I>&gt;<i>         at java.io.FileInputStream.open(Native Method)
+</I>&gt;<i>         at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+</I>&gt;<i>         at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+</I>&gt;<i>         at java.io.FileReader.&lt;init&gt;(Unknown Source)
+</I>&gt;<i>         at
+</I>&gt;<i> ch.ethz.jadabs.pluginLoader.PluginLoaderImpl.init(PluginLoaderImpl.ja
+</I>&gt;<i> va:127)
+</I>&gt;<i>         at
+</I>&gt;<i> ch.ethz.jadabs.pluginLoader.PluginLoaderActivator.start(PluginLoaderA
+</I>&gt;<i> ctivator.java:98)
+</I>&gt;<i>         at org.knopflerfish.framework.BundleImpl$1.run(BundleImpl.java:279)
+</I>&gt;<i>         at java.security.AccessController.doPrivileged(Native Method)
+</I>&gt;<i>         at org.knopflerfish.framework.BundleImpl.start(BundleImpl.java:253)
+</I>&gt;<i>         at org.knopflerfish.framework.Framework.launch(Framework.java:358)
+</I>&gt;<i>         at org.knopflerfish.framework.Main.handleArgs(Main.java:283)
+</I>&gt;<i>         at org.knopflerfish.framework.Main.main(Main.java:190)
+</I>&gt;<i> 1609 [main] ERROR ch.ethz.jadabs.pluginLoader.PluginLoaderImpl - Loading of
+</I>&gt;<i> Plug
+</I>&gt;<i> in  failed.
+</I>&gt;<i> Framework launched
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jadabs-dev">More information about the Jadabs-dev
+mailing list</a><br>
+</body></html>
